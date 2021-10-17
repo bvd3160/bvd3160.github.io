@@ -1,0 +1,11 @@
+.center{
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  border: 5px solid #000000;
+  padding: 100px;
+}
+
+h1 {
+  font-size: 50em;
+}
