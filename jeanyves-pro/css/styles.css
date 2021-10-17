@@ -1,0 +1,249 @@
+/* -------------------------------------
+                IMPORTS
+----------------------------------------*/
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans+Condensed');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+
+/* -------------------------------------
+                TYPOGRAPHY
+----------------------------------------*/
+*{
+    font-family: "Quicksand", "Poppins", "Open Sans Condensed", "Ubuntu", "San Serif", "Times New Roman";
+    text-align: justify;
+}
+
+h1 small, h2 small, a {
+    color : #ff6700;
+}
+
+body {
+  width: 100%;
+}
+/* -------------------------------------
+         HEADER & FOOTER
+----------------------------------------*/
+
+.navbar-inverse p, h4{
+    color: dimgrey;
+}
+
+
+.center-text-section{
+    margin:60px 0 60px 0;
+}
+/* -------------------------------------
+            SECTION 1
+----------------------------------------*/
+#section1 {
+    /* PARALLAX */
+    width: 100%;
+    background-image: url('../images/me.jpg');
+    min-height:580px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}.site-title{
+    text-align: right;
+    margin-top: 200px;
+    font-size: 250%;
+    color:white;
+}
+
+/* -------------------------------------
+            SECTION 2
+----------------------------------------*/
+#section2 {
+    /* PARALLAX */
+    width: 100%;
+    background-color: whitesmoke;
+    min-height:300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}#section2-about{
+    width: 100%;
+    background-color: black;
+}#about-banner {
+    /* PARALLAX */
+    width: 100%;
+    background-image: url('../images/about_banner.jpg');
+    min-height:600px;
+    background-position: center center;
+}
+/* -------------------------------------
+            SECTION 3
+----------------------------------------*/
+
+#section3 {
+    /* PARALLAX */
+    width: 100%;
+    background-image: url('../images/section3.jpg');
+    min-height:400px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* -------------------------------------
+            SECTION 4
+----------------------------------------*/
+
+#section4 {
+    /* PARALLAX */
+    width: 100%;
+    background-image: url('../images/section4.jpg');
+    min-height:600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}.section4-text{
+    color: whitesmoke;
+    margin: 300px 0 0 35px;
+    text-shadow: -2px 2px 2px #000;
+    -ms-transform: rotate(-2deg); /* IE 9 */
+    -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+    transform: rotate(-2deg);
+}#modal-trigger{
+    color: white;
+    margin: -45px 0 0 250px;
+    font-size: 200%;
+    text-shadow: -2px 2px 2px #000;
+    -ms-transform: rotate(-2deg); /* IE 9 */
+    -webkit-transform: rotate(-2deg); /* Chrome, Safari, Opera */
+    transform: rotate(-2deg);
+    width: 70px;
+}#modal-trigger:hover{
+    color: #ff6700;
+}
+
+/* -------------------------------------
+            SECTION 5
+----------------------------------------*/
+#section5 {
+    /* PARALLAX */
+    width: 100%;
+    background-color: whitesmoke;
+    min-height:300px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}#porfolio-banner {
+    /* PARALLAX */
+    width: 100%;
+    background-image: url('../images/porfolio_banner.jpg');
+    min-height:400px;
+    background-position: center center;
+}
+
+
+
+
+p{
+    font-size: 105%;
+}
+
+.light-text{
+    color: white;
+}
+.dark-text{
+    color:gray;
+}
+.black-text{
+    color: black;
+}
+
+
+
+.footer h4{
+    text-decoration: underline;
+}
+
+.logo-sizing{
+    width:100px;
+    height:100px;
+}
+
+/* -------------------------------------
+                PANELS
+----------------------------------------*/
+/* Wrapper for page content to push down footer */
+
+.bg-dark-pane{
+    background-color: #222222; /* black */
+    color: #FFFFFF;
+    padding:20px;
+    /* border-radius: 5px; */  /* rounded edges */
+}
+
+.bg-light-pane{
+    background-color: whitesmoke;
+    color: #000000;
+    padding:20px;
+    /* opacity:.75; */
+    /* border-radius: 5px; */  /* rounded edges */
+}
+
+.shadowing{
+    box-shadow: 2px 2px 5px #011;
+}
+
+a:hover {
+    background-color: #ff6700;
+    padding:1px;
+    color: white;
+}
+
+.blur{
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+}
+.unblur{
+    -webkit-filter: blur(0px);
+    -moz-filter: blur(0px);
+    -o-filter: blur(0px);
+    -ms-filter: blur(0px);
+    filter: blur(0px);
+}
+
+
+/* -------------------------------------
+            BOOTSTRAP STYLE MODS
+----------------------------------------*/
+.navbar-inverse{
+    border-radius: 0px;
+    border:0px;
+}
+
+.img-thumbnail{
+    margin-right:10px;
+    padding: 0px;
+    border: none;
+}
+
+/* The following two blocks make columns in a container the same height. */
+/*
+  The solution came from here:
+  http://stackoverflow.com/questions/19695784/how-can-i-make-bootstrap-columns-all-the-same-height
+*/
+.row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display:         flex;
+  flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+}
+/* The above two blocks make columns in a container the same height. */
