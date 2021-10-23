@@ -1,4 +1,4 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
@@ -9,5 +9,27 @@
     <div>
       <h1 class="center">WATCH THIS SPACE.</h1>
     </div>
+  <!-- GENERATE A LIST OF FOLDERS IN DIVEN PATH -->
+  <div id="renderList"></div>
+  <script>
+    (function(){
+        var ul = document.createElement('ul');
+        ul.setAttribute('id','proList');
+
+        folderNames = ['This Will','Have a List','My Projects','For your viewing!'];
+
+        document.getElementById('renderList').appendChild(ul);
+        folderNames.forEach(renderfolderNames);
+
+        function renderfolderNames(element, index, arr) {
+            var li = document.createElement('li');
+            li.setAttribute('class','item');
+
+            ul.appendChild(li);
+
+            li.innerHTML=li.innerHTML + element;
+        }
+    })();
+</script>
   </body>
 </html>

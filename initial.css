@@ -4,12 +4,12 @@
   left: 33%;
   right: 33%;
   transform: translate(0, -50%);
-  border: 85px solid #000000;
+  border: 50px solid #000000;
   padding: 20px;
 }
 
 h1 {
-  
+
   font-family: roboto, verdana, monospace;
   font-size: 2em;
 }
