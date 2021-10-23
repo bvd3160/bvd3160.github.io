@@ -14,9 +14,10 @@
   <script>
     (function(){
         var ul = document.createElement('ul');
-        ul.setAttribute('id','proList');
+        ul.setAttribute('id','projectList');
 
-        folderNames = ['This Will','Have a List','My Projects','For your viewing!'];
+        //THIS WILL BE AN AUTO-GENERATED LIST - coming soon!
+        folderNames = ['jeanyves-pro', 'nzcraftsearch', 'parallax'];
 
         document.getElementById('renderList').appendChild(ul);
         folderNames.forEach(renderfolderNames);
@@ -26,8 +27,8 @@
             li.setAttribute('class','item');
 
             ul.appendChild(li);
-
-            li.innerHTML=li.innerHTML + element;
+            //create a list item with a link to the project name's index.html start file
+            li.innerHTML=li.innerHTML + "<a href = '"+element+"/index.html'/a>"+element;
         }
     })();
 </script>
