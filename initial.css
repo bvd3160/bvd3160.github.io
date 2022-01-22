@@ -1,3 +1,11 @@
+#projectList {
+  font-family: roboto, verdana, monospace;
+  text-transform: uppercase;
+  list-style-type: none;
+  margin: 10px, 0px;
+  padding: 0px;
+}
+
 .center{
   position: absolute;
   top: 50%;
@@ -8,26 +16,17 @@
   padding: 20px;
 }
 
-h1 {
-
-  font-family: roboto, verdana, monospace;
-  font-size: 2em;
-}
-
-#projectList {
-  font-family: roboto, verdana, monospace;
-  font-weight: bold;
-  list-style-type: none;
-  margin: 0px;
-  padding: 0px;
-}
-
 .item {
   margin-bottom: 10px;
   font-size: 2em;
 }
 
-div {
-  height: 100%;
-  width: 100%;
+h1 {
+  font-family: roboto, verdana, monospace;
+  font-size: 2em;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }

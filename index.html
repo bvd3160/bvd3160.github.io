@@ -7,17 +7,18 @@
   </head>
   <body>
     <div>
-      <h1 class="center">WATCH THIS SPACE.</h1>
+      <h1 class="center">MY WEB PROJECT LIST</h1>
     </div>
   <!-- GENERATE A LIST OF FOLDERS IN DIVEN PATH -->
   <div id="renderList"></div>
-  <script>
+
+ <script>
     (function(){
         var ul = document.createElement('ul');
         ul.setAttribute('id','projectList');
 
         //THIS WILL BE AN AUTO-GENERATED LIST - coming soon!
-        folderNames = ['jeanyves-pro', 'nzcraftsearch', 'parallax'];
+        folderNames = ['jeanyves-pro', 'nzcraftsearch', 'parallax', 'worldnewscycle'];
 
         document.getElementById('renderList').appendChild(ul);
         folderNames.forEach(renderfolderNames);
@@ -28,9 +29,15 @@
 
             ul.appendChild(li);
             //create a list item with a link to the project name's index.html start file
-            li.innerHTML=li.innerHTML + "<a href = '"+element+"/index.html'/a>"+element;
+            li.innerHTML=li.innerHTML + "<a href = '"+element+"/index.html'/a>"+(index+1)+"- "+element+".";
+            //li.innerHTML=li.innerHTML + "<a href = '"+element+"/index.html'/a>"+element;
         }
     })();
 </script>
+
+  <script>
+      console.log("Hello World 2");
+  </script>
+
   </body>
 </html>
