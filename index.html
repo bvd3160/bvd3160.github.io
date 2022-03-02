@@ -6,38 +6,30 @@
     <link rel="stylesheet" href="initial.css">
   </head>
   <body>
-    <div>
-      <h1 class="center">MY WEB PROJECT LIST</h1>
-    </div>
   <!-- GENERATE A LIST OF FOLDERS IN DIVEN PATH -->
-  <div id="renderList"></div>
+  <div id="renderList">
+    <script>
+       (function(){
+           var ul = document.createElement('ul');
+           ul.setAttribute('id','projectList');
 
- <script>
-    (function(){
-        var ul = document.createElement('ul');
-        ul.setAttribute('id','projectList');
+           //THIS WILL BE AN AUTO-GENERATED LIST - coming soon!
+           folderNames = ['jeanyves-pro', 'redPop-22'];
 
-        //THIS WILL BE AN AUTO-GENERATED LIST - coming soon!
-        folderNames = ['jeanyves-pro', 'nzcraftsearch', 'parallax', 'worldnewscycle'];
+           document.getElementById('renderList').appendChild(ul);
+           folderNames.forEach(renderfolderNames);
 
-        document.getElementById('renderList').appendChild(ul);
-        folderNames.forEach(renderfolderNames);
+           function renderfolderNames(element, index, arr) {
+               var li = document.createElement('li');
+               li.setAttribute('class','item');
 
-        function renderfolderNames(element, index, arr) {
-            var li = document.createElement('li');
-            li.setAttribute('class','item');
-
-            ul.appendChild(li);
-            //create a list item with a link to the project name's index.html start file
-            li.innerHTML=li.innerHTML + "<a href = '"+element+"/index.html'/a>"+(index+1)+"- "+element+".";
-            //li.innerHTML=li.innerHTML + "<a href = '"+element+"/index.html'/a>"+element;
-        }
-    })();
-</script>
-
-  <script>
-      console.log("Hello World 2");
-  </script>
-
+               ul.appendChild(li);
+               //create a list item with a link to the project name's index.html start file
+               li.innerHTML=li.innerHTML + "<a href = '"+element+"/index.html'/a>"+(index+1)+"| "+element+".";
+               //li.innerHTML=li.innerHTML + "<a href = '"+element+"/index.html'/a>"+element;
+           }
+       })();
+   </script>
+  </div>
   </body>
 </html>

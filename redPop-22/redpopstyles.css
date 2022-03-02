@@ -1,0 +1,34 @@
+
+html, body {
+  margin: 0px;
+  height: 100%;
+  background-color: #660708;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: auto;
+  height: 100%;
+  width: 65%;
+  background-color: #a4161a;
+  padding: 10px;
+}
+
+.box {
+  width: 33%;
+  height: 33%;
+  border-radius: 2px;
+  text-align: center;
+}
+
+.dark-box{
+  background: #ba181b;
+  color: #ffffff;
+}
+
+.light-box{
+  background: #e5383b;
+  color: #0b090a;
+}

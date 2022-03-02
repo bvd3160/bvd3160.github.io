@@ -29,4 +29,9 @@ h1 {
 a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
+}
+
+a:hover {
+  color: grey;
 }
